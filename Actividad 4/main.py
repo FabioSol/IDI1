@@ -35,5 +35,5 @@ Genere una lista Q que emule los IQ de una muestra aleatoria de 500 personas.
 Si se considera a una persona superdotada si su IQ es igual o mayor a 130, 
 ¿cuántos superdotados se obtuvieron en la simulación?
 """
-
-print((np.random.normal(scale=15,loc=100,size=500)>=130).sum())
+Q=np.random.normal(scale=15,loc=100,size=500)
+print((Q>=130).sum())
